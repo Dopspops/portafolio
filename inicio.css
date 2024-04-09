@@ -1,0 +1,487 @@
+
+.heebo-fontHeebo {
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.welcome {
+    animation: fadeLeftAnimation 1s ease forwards;
+}
+
+@keyframes fadeLeftAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.fade-in {
+    view-timeline-name: --fade;
+    view-timeline-axis: block;
+
+    animation-timeline: --fade;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+
+#header_inicio{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.fixed-top {
+    position:fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+#header_inicio .nav-link {
+    padding: 12px;
+}
+
+#header_inicio .navbar-nav .nav-link {
+    transition: color 0.05s; /* Transicion al dar click */
+}
+
+.navbar-nav .nav-link:active {
+    color: #6196b8;
+    font-weight: bold; /* Bold cuando esta seleccionado, da click en la pagina */
+}
+
+#header_inicio .navbar-nav .nav-link.active {
+    color: #6196b8;
+    font-weight: bold; /* Bold cuando esta seleccionado, esta en la pagina */
+}
+
+#header_inicio .navbar-nav .nav-link:hover {
+    color: #6196b8;
+    transition: 0.9s;
+}
+
+
+
+/* Presentacion */
+
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rem;
+    padding-left: 8rem;
+    margin-bottom: 12vw;
+}
+
+#welcome-text-small {
+    color: grey;
+    margin-left: 1rem;
+    font-size: 1.5vw;
+}
+
+#welcome-portafolio {
+    font-weight: bold;
+    font-size: 10vw;
+    width: 70%;
+    color: black;
+}
+
+.intro_inicio {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding: 20px;
+    padding-top: 100px;
+    padding-left: 130px;
+    width: 50%;
+}
+
+#titulo_inicio_presentacion {
+    font-size: 3.5vw;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+#texto_inicio_presentacion {
+    font-size: 1vw;
+    margin-bottom: 2rem;
+}
+
+.intro_inicio #titulo_inicio_presentacion {
+    font-weight: bold;
+}
+
+.intro_inicio_imagen img{
+    width: 40%; 
+    height: auto ;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-left: 70px;
+    
+}
+
+#boton-cv{
+    background-color: white;
+    border-radius: 12px;
+    border: 1.5px #6196b8 solid;
+    color: #6196b8;
+    font-size: 1.2vw;
+    font-weight: bold;
+    width: 30%;
+    overflow: hidden;
+    transition-duration: 0.4s;
+}
+
+#boton-cv:hover {
+    background-color: #6196b8;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#boton-cv:active {
+    border: 2px #6196b8 solid;
+}
+
+.separation {
+    background-color: #93c6e7;
+    height: 10vw;
+    width: 80%;
+    margin: 8vw auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.separation-contenido {
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+    animation: loop 5s linear infinite;
+}
+
+.rectangle {
+    display: flex;
+    gap: 0 0.2rem;
+    width: 30rem;
+    height: 8rem;
+    background-color: white;
+    transform: rotate(-45deg);
+}
+
+.rectangle-last {
+    display: flex;
+    gap: 0 0.2rem;
+    width: 30rem;
+    height: 8rem;
+    background-color: white;
+    transform: rotate(-135deg) ;
+    
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+.tecnologias-container {
+    display: flex;
+}
+
+.tecnologias-container button {
+    margin-right: 10px;
+    
+}
+
+.tecnologias-container h5 {
+    margin-top: 5px;
+    color: #CCCCCC;
+}
+
+#titulo-featured-work{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.5vw;
+}
+
+.img-fluid {
+    max-width: 105% !important;
+    height: 100% !important;
+}
+
+.tecnologias-aprendidas { /*Skills Overview*/
+    color: black;
+    padding: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-top: 12vw;
+}
+
+.link-trabajos {
+    color:#6196b8;
+    font-size: 1vw;
+    transition-duration: 0.4s;
+
+}
+
+.link-trabajos:hover {
+    text-decoration: none;
+    transition: 0.5s;
+    transform: scale(1.1);
+    color: #668aa1;
+}
+
+
+#titulo-skills-overview {
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin:auto auto;
+    margin-bottom: 30px;
+    color: black;
+}
+
+#texto-skills-overview {
+    font-size: 1vw;
+}
+
+#titulo-tecnologias-aprendidas{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skills-overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 200px;
+    margin: auto;
+    gap: 5rem;
+}
+
+.card {
+    overflow: hidden;
+}
+.container-skills {
+    width: 80%;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.card-body-skills {
+    padding: 1.25rem;
+    min-width: 30rem;
+    
+}
+
+.card-title {
+    font-size: 1vw;
+    font-weight: bold;  
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 0.8vw;
+    color: grey;
+}
+
+.progress {
+    width: 22vw;
+    margin-bottom: 1rem;
+}
+
+.listas-tecnologias {
+    list-style: none;
+    padding-left: 0;
+}
+
+.listas-tecnologias li {
+    display: flex;
+    align-items: center;
+}
+
+.listas-tecnologias li i {
+    margin-right: 10px;
+    color: #6196b8;
+}
+
+.featured-work {
+    margin-top: 12vw;
+}
+
+.featured-work a {
+    font-size: 1vw;
+    color: #6196b8 !important;
+    padding: 0.5rem;
+    border: 1px solid #6196b8;
+    border-radius: 50%;
+    transition-duration: 0.4s;
+}
+
+.featured-work a:hover {
+    text-decoration: none;
+    background-color: #6196b8;
+    border: 1px solid #6196b8;
+    color: white !important;
+    border-radius: 50%s;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+
+.carta-works {
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    align-self: center;
+    border:none;
+    margin-top: 40px;
+    border-radius: 206px;
+}
+
+.carta-works:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.card-year-button {
+    background-color:#6196b8;
+    padding: 0.3rem;
+    color: white ;
+    font-weight: bold;
+    border-radius: 16px;
+    border: 1.5px #6196b8;
+    margin-right: 0.4rem;
+}
+
+
+footer {
+    margin-top: 10vw;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    color: grey;
+    width: 100%;
+    position: absolute;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-footer {
+    font-size: 1.2vw;
+    margin-left: 3.2rem;
+    width: 30%;
+}
+
+.social-footer {
+    list-style: none;
+    margin-right: 2rem;
+    display: flex ;
+    flex-direction: row;
+    float: left;
+}
+
+.social-footer li a {
+    margin-left: 1rem;
+    font-size: 1.5vw;
+    color: #6196b8 !important;
+    padding: 0.5rem;
+    border: 1px solid #6196b8 !important;
+    border-radius: 50%;
+    transition-duration: 0.4s;
+}
+
+.social-footer li a:hover {
+    text-decoration: none;
+    background-color: #6196b8 !important;
+    border: 1px solid #6196b8 !important;
+    color: white !important;
+    border-radius: 50%s;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+#info-contact {
+    font-size: 1.2vw;
+    float: right;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-text {
+    color: grey;
+    font-size: 1vw;
+}
+
+#contact-title {
+    font-weight: bold;
+    font-size:  6.5vw;
+    color: black;
+}
+
+
+#boton-contact{
+    background-color: white;
+    border-radius: 12px;
+    border: 1.5px #6196b8 solid;
+    color: #6196b8;
+    font-size: 1.2vw;
+    font-weight: bold;
+    width: 10%;
+    overflow: hidden;
+    transition-duration: 0.4s;
+}
+
+#boton-contact:hover {
+    background-color: #6196b8;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
