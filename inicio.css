@@ -88,7 +88,7 @@
 .welcome {
     display: flex;
     flex-direction: column;
-    margin-top: 20rem;
+    margin-top: 14rem;
     padding-left: 8rem;
     margin-bottom: 12vw;
 }
